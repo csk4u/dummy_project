@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScreenerOn</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Ensure the body and html take up the full viewport height */
+      html, body, #root {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
+    </style>
+</head>
+<body class="bg-zinc-900">
+    <!-- The root element where the React app will be mounted -->
+    <div id="root" class="h-full"></div>
+    <!-- The script that loads the compiled React code -->
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
